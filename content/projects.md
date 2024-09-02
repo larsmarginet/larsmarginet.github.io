@@ -1,5 +1,6 @@
 +++
 title = 'Projects'
+description = 'This is a projects page'
 +++
 
 # Projects

@@ -1,5 +1,6 @@
 +++
 title = 'Writing'
+description = 'This is a blog page'
 +++
 
 # Writing

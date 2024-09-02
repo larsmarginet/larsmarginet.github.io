@@ -1,5 +1,6 @@
 +++
 title = 'Home'
+description = 'Hi 👋 I’m Lars. How are you?'
 +++
 
 # Home
