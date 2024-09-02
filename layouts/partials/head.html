@@ -1,0 +1,11 @@
+<head>
+    {{ $title := ( .Title ) }}
+	{{ $siteTitle := ( .Site.Title ) }}
+	{{ if .IsHome }}
+	<title>{{ $siteTitle }} | Home </title>
+	{{ else }}
+	<title>{{ $title }} | {{ $siteTitle }}</title>
+	{{ end }}
+
+    <link rel="stylesheet" href="/styles/index.css">
+</head>

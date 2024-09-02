@@ -1,0 +1,69 @@
+baseURL = "https://larsmarginet.github.io/"
+languageCode = "en-us"
+title = "Lars Marginet"
+
+[menu]
+[[menu.main]]
+pageRef="/"
+name = "Home"
+weight = 1
+
+[[menu.main]]
+pageRef="/blog"
+name = "Writing"
+weight = 2
+
+[[menu.main]]
+pageRef="/projects"
+name = "Projects"
+weight = 3
+
+[[menu.main]]
+pageRef="/about"
+name = "About"
+weight = 4
+
+[params]
+[[params.social]]
+name = "Email"
+url = "mailto:larsmarginet@yahoo.com"
+
+[[params.social]]
+name = "Linkedin"
+url = "https://www.linkedin.com/in/lars-marginet-b07528215/"
+
+[[params.social]]
+name = "Github"
+url = "https://github.com/larsmarginet/"
+
+[[params.skill]]
+name = "javascript"
+color = "#FBF3DB"
+
+[[params.skill]]
+name = "typescript"
+color = "#DDEBF1"
+
+[[params.skill]]
+name = "vue"
+color = "#DDEDEA"
+
+[[params.skill]]
+name = "nuxt"
+color = "#DDEDEA"
+
+[[params.experience]]
+name = "ui developer @littlemissrobot"
+url = "https://littlemissrobot.com/"
+period = "2021 - now"
+
+[[params.experience]]
+name = "student @devine"
+url = "https://www.devine.be/en/"
+period = "2018 - 2021"
+
+[[params.experience]]
+name = "student @viso"
+url = "https://viso.be/"
+period = "2015 - 2018"
+

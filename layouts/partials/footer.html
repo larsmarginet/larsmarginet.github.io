@@ -1,0 +1,9 @@
+<footer>
+    <ul>
+        {{ range .Site.Params.Social }}
+        <li>
+            <a href="{{ .url }}">{{ .name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</footer>

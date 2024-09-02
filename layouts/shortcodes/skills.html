@@ -1,0 +1,7 @@
+<ul>
+    {{ range .Site.Params.Skill }}
+    <li style="background-color: {{ .color }};">
+        {{ .name }}
+    </li>
+    {{ end }}
+</ul>

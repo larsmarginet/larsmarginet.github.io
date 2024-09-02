@@ -1,0 +1,9 @@
+<ul>
+    {{ range .Site.Params.Experience }}
+    <li>
+        <span>{{ .period }}</span>
+
+        <a href="{{ .url }}">{{ .name }}</a>
+    </li>
+    {{ end }}
+</ul>
