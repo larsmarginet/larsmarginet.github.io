@@ -1,3 +1,26 @@
 @import "./reset.css";
 
-:root {}
+:root {
+    /* neutrals */
+    --white: #FFFFFF;
+    --black: #37352F;
+
+    /* colors */
+    --red: #E03E3E;
+    --grey: #F4F4F4;
+
+    /* light colors */
+    --grey-light: #EBECED;
+    --brown-light: #E9E5E3;
+    --orange-light: #FAEBDD;
+    --yellow-light: #FBF3DB;
+    --green-light: #DDEDEA;
+    --blue-light: #DDEBF1;
+    --purple-light: #EAE4F2;
+    --pink-light: #F4DFEB;
+    --red-light: #FBE4E4;
+}
+
+*, html {
+    color: var(--black);
+}
