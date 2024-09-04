@@ -1,7 +1,7 @@
 {{ $amount := $.Params.amount }}
 
 <ul>
-    {{ range ( where .Site.RegularPages "Type" "blogs" | first $amount ) }}
+    {{ range ( where .Site.RegularPages "Type" "blog" | first $amount ) }}
     <li>
         <a href="{{ .RelPermalink }}">{{.Title}}</a>
     </li>

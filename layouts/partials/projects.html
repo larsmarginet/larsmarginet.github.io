@@ -1,0 +1,15 @@
+{{ $amount := .Scratch.Get "amount" }} <!-- number -->
+{{ $paginate := .Scratch.Get "paginate" }} <!-- boolean -->
+
+<ul>
+    {{ $pages := where .Site.RegularPages "Type" "projects" }}
+    {{ $paginator := .Paginate $pages.ByTitle $amount }}
+  
+    {{ range $paginator.Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+  
+    {{ if $paginate }} 
+        {{ template "_internal/pagination.html" . }}
+    {{ end }}
+  </ul>

@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main>
+  {{ .Content }}
+
+  {{ .Scratch.Set "amount" 5 }}
+  {{ .Scratch.Set "paginate" true }}
+  {{ partial "projects.html" . }}
+</main>
+{{ end }}
