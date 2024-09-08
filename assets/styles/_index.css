@@ -1,26 +1,74 @@
-@import "./reset.css";
-
-:root {
-    /* neutrals */
-    --white: #FFFFFF;
-    --black: #37352F;
-
-    /* colors */
-    --red: #E03E3E;
-    --grey: #F4F4F4;
-
-    /* light colors */
-    --grey-light: #EBECED;
-    --brown-light: #E9E5E3;
-    --orange-light: #FAEBDD;
-    --yellow-light: #FBF3DB;
-    --green-light: #DDEDEA;
-    --blue-light: #DDEBF1;
-    --purple-light: #EAE4F2;
-    --pink-light: #F4DFEB;
-    --red-light: #FBE4E4;
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter.woff2") format("woff2");
+  font-weight: 100 950;
+  font-style: normal;
 }
 
-*, html {
-    color: var(--black);
+:root {
+  /* neutrals */
+  --white: #ffffff;
+  --black: #37352f;
+
+  /* colors */
+  --red: #e03e3e;
+  --grey: #f4f4f4;
+
+  /* dark variants */
+  --grey-dark: #bfbfbf;
+
+  /* light variants */
+  --grey-light: #ebeced;
+  --brown-light: #e9e5e3;
+  --orange-light: #faebdd;
+  --yellow-light: #fbf3db;
+  --green-light: #ddedea;
+  --blue-light: #ddebf1;
+  --purple-light: #eae4f2;
+  --pink-light: #f4dfeb;
+  --red-light: #fbe4e4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--black);
+  font-family: Inter;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h4 {
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+
+  transition: color 150ms ease-in-out;
+
+  &:hover {
+    color: var(--grey-dark);
+  }
 }

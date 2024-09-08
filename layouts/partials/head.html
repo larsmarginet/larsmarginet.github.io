@@ -1,21 +1,26 @@
 <head lang="{{ .Site.Language.Lang }}">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-	{{/*  TODO: remove  */}}
-	<meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
+  />
+  {{/* TODO: remove */}}
+  <meta name="robots" content="noindex,nofollow" />
 
-    {{ $title := ( .Title ) }}
-	{{ $siteTitle := ( .Site.Title ) }}
-	{{ if .IsHome }}
-	<title>{{ $siteTitle }} | Home </title>
-	{{ else }}
-	<title>{{ $title }} | {{ $siteTitle }}</title>
-	{{ end }}
-
-	{{ with resources.Match "styles/*.css" }}
-		{{ with resources.Concat "styles/index.css" . | minify | fingerprint  }}
-			<link rel="stylesheet" href="{{ .RelPermalink }}">
-		{{ end }}
-	{{ end }}
+  <!-- title -->
+  {{ $title := ( .Title ) }} {{ $siteTitle := ( .Site.Title ) }} 
+  {{ if .IsHome }}
+  <title>{{ $siteTitle }} | Home</title>
+  {{ else }}
+  <title>{{ $title }} | {{ $siteTitle }}</title>
+  {{ end }} 
+  
+  <!-- css -->
+  {{ with resources.Match "styles/*.css" }} 
+	{{ with resources.Concat
+	"styles/index.css" . | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ .RelPermalink }}" />
+	{{ end }} 
+  {{ end }}
 </head>
