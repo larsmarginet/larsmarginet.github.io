@@ -29,12 +29,8 @@
 
   <!-- title -->
   {{ $title := ( .Title ) }} {{ $siteTitle := ( .Site.Title ) }} 
-  {{ if .IsHome }}
-  <title>{{ $siteTitle }} | Home</title>
-  {{ else }}
   <title>{{ $title }} | {{ $siteTitle }}</title>
-  {{ end }} 
-  
+
   <!-- css -->
   {{ with resources.Match "styles/*.css" }} 
 	{{ with resources.Concat
