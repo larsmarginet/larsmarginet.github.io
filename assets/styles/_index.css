@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Italic.woff2") format("woff2");
+  font-weight: 100 950;
+  font-style: italic;
+}
+
 :root {
   /* neutrals */
   --white: #ffffff;
@@ -71,4 +78,25 @@ a {
   &:hover {
     color: var(--grey-dark);
   }
+}
+
+body {
+  --header-height: 6rem;
+  --header-spacing: 4rem;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  top: var(--header-spacing);
+}
+
+.main {
+  max-width: 64rem;
+  padding: calc(var(--header-height) + (var(--header-spacing) * 2)) 1rem 4rem;
+  margin: 0 auto;
 }

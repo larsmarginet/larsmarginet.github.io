@@ -1,13 +1,15 @@
 {{ $currentPage := . }}
 
 <header class="header">
-    <ul>
-        {{ range .Site.Menus.main }}
-        <li>
-            <a href="{{ .PageRef }}" href="{{ .PageRef }}">
-                {{ if $currentPage.IsMenuCurrent .Menu . }}>{{ end }} {{ .Name }}
-            </a>
-        </li>
-        {{ end }}
-    </ul>
+    <nav class="header__nav">
+        <ul class="header__nav-links">
+            {{ range .Site.Menus.main }}
+            <li class="header__nav-links-item">
+                <a class="header__nav-link" href="{{ .PageRef }}" href="{{ .PageRef }}">
+                    {{ if $currentPage.IsMenuCurrent .Menu . }}>{{ end }} {{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
 </header>
