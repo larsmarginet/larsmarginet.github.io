@@ -1,0 +1,9 @@
+.tag {
+    display: inline;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--grey-light);
+    border-radius: 0.4rem;
+    flex-grow: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+}

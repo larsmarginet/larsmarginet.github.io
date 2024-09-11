@@ -32,19 +32,71 @@ url = "https://github.com/larsmarginet/"
 
 [[params.skill]]
 name = "javascript"
-color = "#FBF3DB"
+color = "yellow-light"
 
 [[params.skill]]
 name = "typescript"
-color = "#DDEBF1"
+color = "blue-light"
 
 [[params.skill]]
 name = "vue"
-color = "#DDEDEA"
+color = "green-light"
 
 [[params.skill]]
 name = "nuxt"
-color = "#DDEDEA"
+color = "green-light"
+
+[[params.skill]]
+name = "react"
+color = "blue-light"
+
+[[params.skill]]
+name = "next"
+color = "purple-light"
+
+[[params.skill]]
+name = "react native"
+color = "blue-light"
+
+[[params.skill]]
+name = "craft cms"
+color = "red-light"
+
+[[params.skill]]
+name = "twig"
+color = "green-light"
+
+[[params.skill]]
+name = "ionic"
+color = "blue-light"
+
+[[params.skill]]
+name = "capacitor"
+color = "blue-light"
+
+[[params.skill]]
+name = "html"
+color = "orange-light"
+
+[[params.skill]]
+name = "css"
+color = "blue-light"
+
+[[params.skill]]
+name = "ux design"
+color = "red-light"
+
+[[params.skill]]
+name = "hugo"
+color = "pink-light"
+
+[[params.skill]]
+name = "git"
+color = "grey-light"
+
+[[params.skill]]
+name = "mobile development"
+color = "green-light"
 
 [[params.experience]]
 name = "ui developer @littlemissrobot"

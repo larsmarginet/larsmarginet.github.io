@@ -1,6 +1,6 @@
-<ul>
+<ul class="tags">
     {{ range .Site.Params.Skill }}
-    <li style="background-color: {{ .color }};">
+    <li style="background-color: var(--{{.color}});" class="tag">
         {{ .name }}
     </li>
     {{ end }}
