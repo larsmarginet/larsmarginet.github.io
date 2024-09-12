@@ -1,0 +1,13 @@
+.callout {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: 1.2rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: var(--border-radius-md);
+}
+
+@media (width >= calc(48rem * 0.625)) {
+    .callout {
+        padding: 2rem 2.4rem;
+    }
+}

@@ -1,0 +1,13 @@
+{{ $emoji := .Get "emoji" | default "💡" }} <!-- string -->
+{{ $color := .Get "color" | default "yellow-light" }} <!-- string -->
+
+<div class="callout" style="background-color: var(--{{ $color }});">
+    <span>
+        {{ $emoji }}
+    </span>
+    
+    <p>
+        {{ .Inner | markdownify }}
+    </p>
+</div>
+

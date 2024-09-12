@@ -102,6 +102,16 @@ a {
   }
 }
 
+strong,
+b {
+  font-weight: 700;
+}
+
+em, 
+i {
+  font-style: italic;
+}
+
 body {
   --header-height: 6rem;
   --header-spacing: 1.6rem;
@@ -118,6 +128,7 @@ body {
 }
 
 .main {
+  width: 100%;
   max-width: 64rem;
   padding: 1.6rem;
   margin: 0 auto;
